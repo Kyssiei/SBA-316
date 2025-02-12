@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 191, 235);
+    padding: 15px 20px;
+    
+}
+#logo{
+    width: 70px;
+    height: 50px;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-image: url(./Creative\ Portfolio\ \(1\).png);
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 900px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 9em;
+}
+
+#title {
+    background-color: rgb(255, 191, 235);
+    border-radius: 50px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moving-strip {
+    width: 1900px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.moving-strip p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    from {transform: translateX(100%);}
+    to {transform: translateX(-100%);}
+}
+
