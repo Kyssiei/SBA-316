@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="./index.js" defer></script>
     <title>Document</title>
 
@@ -11,30 +12,115 @@
 
 <body>
 <!-- Navigation bar -->
-    <nav class="navbar">
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Join</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Subscribe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+    <!-- <nav class="navbar">
         <div class="logo">
-            <img id="logo" src="https://ih1.redbubble.net/image.532883015.6972/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" alt="" width="30" height="24">
+            <a href="./index.html">
+                <img id="logo" src="https://ih1.redbubble.net/image.532883015.6972/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" alt="" width="30" height="24">
+            </a>
         </div>
-        <ul class="nav-links"></ul>
-    </nav>
+
+        <ul class="nav-links">
+            <a href=""></a>
+        </ul>
+    </nav> -->
+
+
+
+
+
 
  <!-- main container --> 
     <div class="maincontainer">
-        <div class="container1">
-            <section id="title">
-                <h1>Books <br> that <br> inspire</h1>
-            </section>
-            <section>
-                <img src="./Creative Portfolio (1080 x 1080 px).png" alt="">
-            </section>
-        </div>
-        <div class="container2">
-            <div class="moving-strip">
-                <p>Welcome to the Book Club for Women! Join us for cozy reads and inspiring discussions!</p>
+        <div class="container">
+            <div class="container1">
+                <section id="title">
+                    <h1 id="heading" style="font-size: 7em;">Books <br> That <br> Inspire!</h1>
+                    <p id="p">Sign up for our monthly <br>
+                         subscription and recieve a new <br>
+                         book that will change your life!</p>
+                    <button type="button" class="btn btn-success">Sign up Today!</button>
+                </section>
+                <section>
+                    <img src="./pictures.img/Creative Portfolio (1080 x 1080 px).png" alt="">
+                </section>
             </div>
         </div>
 
-        <div class="container3"></div>
+
+        <div class="container2">
+            <div class="moving-strip">
+                <p>Welcome to the Book Club for Women! Join us for cozy reads and inspiring discussions! </p>
+            </div>
+        </div>
+
+
+
+        <div class="container3">
+            <div class="container3-1">
+                <div class="Join">
+                    <img id="bookgirl" src="./pictures.img/20.png" alt="">
+                </div>
+                <div class="Join">
+                    <h1 id="con2title">Join our book club!</h1>
+                    <p>we read a new book everymonth. Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. <br> Quasi, eveniet? Vitae, hic. Nulla, alias reprehenderit ex eum vero ut cum quos 
+                        recusandae soluta, <br>architecto nesciunt, ipsum labore perspiciatis. Unde, accusantium. Lorem ipsum dolor sit amet consectetur adipisicing <br> 
+                        elit. Voluptas, doloribus maxime? Eligendi sequi porro cumque magnam <br> 
+                        dolorum possimus sapiente voluptatibus minima laborum harum cupiditate iusto <br>q
+                        uos provident, error, et unde!
+                    </p> 
+                    <button type="button" class="btn btn-warning">Join Today!</button>
+                </div>
+                
+            </div>
+        </div>
+        <div>
+            <br>
+            <div>
+                <h1 id="notepads">Shop Our Stationary</h1>
+            </div>
+            <br>
+            <div class="container4">
+                <div class="card-body">
+                    <img id="card" src="./pictures.img/' (2).png" alt="">
+                </div>
+
+                <div class="card-body">
+                    <img id="card" src="./pictures.img/'.png" alt="">
+                </div>
+
+                <div class="card-body">
+                    <img id="card" src="./pictures.img/←.png" alt="">
+                </div>
+
+                <div class="card-body">
+                    <img id="card" src="./pictures.img/4.png" alt="">
+                </div>
+
+                <div class="card-body">
+                    <img id="card" src="./pictures.img/3.png" alt="">
+                </div>
+
+            </div>
+            <br>
+            <h3 style="color: white; font-size: 2em;">For every dollar spent a portion goes to support and build our community!</h3>
+            <br>
+
+        </div>
 
     </div>
 

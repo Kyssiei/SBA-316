@@ -1,3 +1,18 @@
+/* .container-fluid{
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+} */
+ 
+.nav-link {
+    color: pink;
+
+}
+.nav-link:hover{
+    color: green;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,23 +27,35 @@
 }
 
 .maincontainer{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background-image: url(./Creative\ Portfolio\ \(1\).png);
+    background-image: url(./pictures.img/Creative\ Portfolio\ \(1\).png);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container1 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
 img {
-    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    max-width: 900px;
 }
 
 h1 {
@@ -37,16 +64,38 @@ h1 {
     font-size: 9em;
 }
 
-#title {
-    background-color: rgb(255, 191, 235);
-    border-radius: 50px;
-    width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#heading{
+    text-align: end;
+    align-items: end;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    /* font-style: italic; */
+    /* font-size: ; */
 }
 
+#p{
+    text-align: end;
+}
+
+#title {
+    /* background-color: rgb(255, 191, 235); */
+    border-radius: 50px;
+    width: px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: white;
+}
+
+/* button{
+    background-color: aqua;
+    border-radius: 50px;
+} */
+
 .moving-strip {
+    display: flex;
+    flex-wrap: wrap;
     width: 1900px;
     overflow: hidden;
     white-space: nowrap;
@@ -68,3 +117,66 @@ h1 {
     to {transform: translateX(-100%);}
 }
 
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container3-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#con2title{
+    font-size: 7em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bookgirl{
+    width: 700px;
+}
+
+.Join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container4{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#card{
+    width: 200px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#notepads{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
