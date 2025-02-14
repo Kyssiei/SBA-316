@@ -1,9 +1,149 @@
-/* .container-fluid{
+
+body{
+    background-image: url(./pictures.img/Creative\ Portfolio\ \(1\).png);
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Books{
+    width: 900px
+}
+.moving-strip {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1900px; */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.moving-strip p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+}
+@keyframes moveText {
+    from {transform: translateX(100%);}
+    to {transform: translateX(-100%);}
+}
+.BookClubSection {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 100px;
-} */
- 
+    text-align: center;
+    background-color: white;
+}
+#bookgirl{
+    width: 700px;
+}
+.Join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#con2title{
+    font-size: 7em;
+    font-family: 'Times New Roman', Times, serif;
+}
+#notepads{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.Stationary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Shop {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container4{
+    /* width: 1300px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-link {
     color: pink;
 
@@ -93,29 +233,7 @@ h1 {
     border-radius: 50px;
 } */
 
-.moving-strip {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1900px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    background: green;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.moving-strip p {
-    display: inline-block;
-    white-space: nowrap;
-    animation: moveText 10s linear infinite;
-}
-
-@keyframes moveText {
-    from {transform: translateX(100%);}
-    to {transform: translateX(-100%);}
-}
 
 .container3{
     display: flex;
@@ -130,53 +248,12 @@ h1 {
 
 }
 
-.container3-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
-}
-#con2title{
-    font-size: 7em;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#bookgirl{
-    width: 700px;
-}
-
-.Join{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container4{
-    width: 1300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
 #card{
-    width: 200px;
+    width: 200px; */
     height: 550px;
     display: flex;
     justify-content: space-between;
 }
 
-#notepads{
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    text-align: center;
-    color: white;
-
-}
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
