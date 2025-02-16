@@ -34,7 +34,7 @@
             <p id="p">Sign up for our monthly <br>
             subscription and recieve a new <br>
             book that will change your life!</p>
-            <button type="button" class="btn btn-success">Sign up Today!</button>
+            <button type="button" id="signUp" class="btn btn-success">Sign up Today!</button>
         </section>
         <section>
             <img id="Books" src="./pictures.img/Creative Portfolio (1080 x 1080 px).png" alt="">
@@ -48,7 +48,9 @@
     <div class="BookClubSection">
         <section class="Join">
             <img id="bookgirl" src="./pictures.img/20.png" alt="">
+            <img id="formImg" src="./pictures.img/hi girl.png" style="display: none;" alt="">
         </section>
+      
         <section class="Join">
             <h1 id="con2title">Join Our Book Club!</h1>
             <p id="par">we read a new book everymonth. Lorem ipsum dolor sit amet consectetur 
@@ -63,6 +65,7 @@
 
             <!-- pop up  -->
                 <div id="formPopup" style="display: none;">
+                
                     <form id="joinForm">
                         <!-- basic information -->
                         <section>
@@ -72,15 +75,15 @@
                             <label for="email"></label>
                             <input type="email" id="email" name="Email" placeholder="Email" required>
                         </section>
-
+                
                         <section>
                             <label for="phone"></label>
                             <input type="phone" id="number" name="phone" placeholder="Phone Number" required>
-
+                
                             <label for="birthday"></label>
                             <input type="birthday" id="birthday" name="birthday" placeholder="Birthday" required>
                         </section>
-
+                
                         <!-- questions -->
                         <section id="questions">
                             <label for="meetingTime"></label>
@@ -90,7 +93,7 @@
                                 <option value="afternoon">Afternoon</option>
                                 <option value="evening">Evening</option>
                             </select>
-
+                
                             <label for="favGenere"></label>
                             <select name="favGenere" id="favGenere">
                                 <option value="" disabled selected>Favorite Book Genre</option>
@@ -105,25 +108,28 @@
                                 <option value="other">Other</option>
                             </select>
                         </section>
-
+                
                         <section id="other">
                             <label for="reasoning"></label>
-                            <textarea type="text" id="reasoning" name="reasoning" placeholder="Why do you want to join the coolest book club ever?"></textarea>
-    
+                            <textarea type="text" id="reasoning" name="reasoning"
+                                placeholder="Why do you want to join the coolest book club ever?"></textarea>
+                
                             <label for="recommendations"></label>
-                            <textarea type="text" id="recommendations" name="recommendations" placeholder="Any book recommendations you want to share?"></textarea>
+                            <textarea type="text" id="recommendations" name="recommendations"
+                                placeholder="Any book recommendations you want to share?"></textarea>
                         </section>
-
+                
+                
                         <div>
-                            <button class="btn btn-warning" type="submit" id="favGenere" name="favGenere" >Submit!</button>
+                            <button class="btn btn-warning" type="submit" id="favGenere" name="favGenere">Submit!</button>
                         </div>
-            
+                
                     </form>
-            
+                
+                
                 </div>
 
         </section>
-        
     </div>
 <!-- Stationary Shop -->
     <br>
@@ -147,7 +153,30 @@
     </div>
     <br>
     <br>
-<!-- Footer Section -->
+    <!-- list od books -->
+     <div class="list">
+        <section>
+            <img src="" alt="">
+        </section>
+        <section>
+            <h1>Here are some of the books that we have read so far</h1>
+                <ul>Atomic Habits</ul>
+                <ul>You are a Magent</ul>
+                <ul>the perfectionists guide to losing control</ul>
+                <ul>The alchemist</ul>
+                <ul>You are a badass</ul>
+                <ul>Dont believe everything you think</ul>
+
+
+        </section>
+     </div>
+
+
+
+
+
+
+     <!-- Footer Section -->
     <div>
       
     </div>

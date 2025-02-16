@@ -90,6 +90,10 @@ header{
     /* width: 600px; */
 }
 /*====================== FORM POP UP ================================== */
+#formPopup{
+    display: flex;
+    flex-direction: row;
+}
 input[type="text"], input[type="email"], input[type="phone"], input[type="location"], input[type="birthday"], select[name="meetingTime"], select[name="favGenere"], select[name="location"] {
     padding: 5px;
     margin: 6px 0;
@@ -116,6 +120,9 @@ textarea[type="text"] {
     width: 100%;
     border: 2px solid pink;
     border-radius: 6px;
+}
+#formImg{
+    width: 700px;
 }
 
 /* ====================== SECTION 3: SHOPPING SECTION ================== */
