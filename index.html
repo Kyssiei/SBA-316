@@ -50,16 +50,80 @@
             <img id="bookgirl" src="./pictures.img/20.png" alt="">
         </section>
         <section class="Join">
-            <h1 id="con2title">Join our book club!</h1>
-            <p>we read a new book everymonth. Lorem ipsum dolor sit amet consectetur 
+            <h1 id="con2title">Join Our Book Club!</h1>
+            <p id="par">we read a new book everymonth. Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. <br> Quasi, eveniet? Vitae, hic. Nulla, alias reprehenderit ex eum vero ut cum quos 
                 recusandae soluta, <br>architecto nesciunt, ipsum labore perspiciatis. Unde, accusantium. Lorem ipsum dolor sit amet consectetur adipisicing <br> 
                 elit. Voluptas, doloribus maxime? Eligendi sequi porro cumque magnam <br> 
                 dolorum possimus sapiente voluptatibus minima laborum harum cupiditate iusto <br>q
                 uos provident, error, et unde!
             </p> 
-            <button type="button" class="btn btn-warning">Join Today!</button>
+            <button id="joinButton" type="button" class="btn btn-warning">Join Today!</button>
+            <br>
+
+            <!-- pop up  -->
+                <div id="formPopup" style="display: none;">
+                    <form id="joinForm">
+                        <!-- basic information -->
+                        <section>
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                
+                            <label for="email"></label>
+                            <input type="email" id="email" name="Email" placeholder="Email" required>
+                        </section>
+
+                        <section>
+                            <label for="phone"></label>
+                            <input type="phone" id="number" name="phone" placeholder="Phone Number" required>
+
+                            <label for="birthday"></label>
+                            <input type="birthday" id="birthday" name="birthday" placeholder="Birthday" required>
+                        </section>
+
+                        <!-- questions -->
+                        <section id="questions">
+                            <label for="meetingTime"></label>
+                            <select name="meetingTime" id="meetingTime">
+                                <option value="" disabled selected>Preferd Meeting time</option>
+                                <option value="early">Morning</option>
+                                <option value="afternoon">Afternoon</option>
+                                <option value="evening">Evening</option>
+                            </select>
+
+                            <label for="favGenere"></label>
+                            <select name="favGenere" id="favGenere">
+                                <option value="" disabled selected>Favorite Book Genre</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="drama">Drama</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="romance">Romance</option>
+                                <option value="mystery">Mystery</option>
+                                <option value="nonfiction">Non-Fiction</option>
+                                <option value="horror">Horror</option>
+                                <option value="action/adventure">Action & Adventure</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </section>
+
+                        <section id="other">
+                            <label for="reasoning"></label>
+                            <textarea type="text" id="reasoning" name="reasoning" placeholder="Why do you want to join the coolest book club ever?"></textarea>
+    
+                            <label for="recommendations"></label>
+                            <textarea type="text" id="recommendations" name="recommendations" placeholder="Any book recommendations you want to share?"></textarea>
+                        </section>
+
+                        <div>
+                            <button class="btn btn-warning" type="submit" id="favGenere" name="favGenere" >Submit!</button>
+                        </div>
+            
+                    </form>
+            
+                </div>
+
         </section>
+        
     </div>
 <!-- Stationary Shop -->
     <br>
@@ -69,17 +133,17 @@
         <br>
         <br>
         <section class="Shop">
-                <img id="card" src="./pictures.img/' (2).png" alt="">
-                <img id="card" src="./pictures.img/'.png" alt="">
-                <img id="card" src="./pictures.img/←.png" alt="">
-                <img id="card" src="./pictures.img/4.png" alt="">
-                <img id="card" src="./pictures.img/3.png" alt="">
+            <div><img id="card" src="./pictures.img/' (2).png" alt=""></div>
+            <div><img id="card" src="./pictures.img/'.png" alt=""></div>
+            <div><img id="card" src="./pictures.img/←.png" alt=""></div>
+            <div><img id="card" src="./pictures.img/4.png" alt=""></div>
+            <div><img id="card" src="./pictures.img/3.png" alt=""></div>
         </section>
         <br>
         <br>
-        <button type="button" class="btn btn-warning">
-            Shop Our Collection
-        </button>
+        <section>
+            <button type="button" class="btn btn-warning">Shop Our Collection</button>
+        </section>
     </div>
     <br>
     <br>
