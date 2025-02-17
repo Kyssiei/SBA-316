@@ -8,12 +8,12 @@ const duration = (screenWidth + textWidth) / 100;
 strip.style.animation = `moveText ${duration}s linear infinite`;
 
 // "Join the club" Form
-const button = document.getElementById("joinButton")
-const par = document.getElementById("par")
-const title = document.getElementById("con2title")
-const formPopup = document.getElementById("formPopup")
-const formImg = document.getElementById("formImg")
-const image = document.getElementById("bookgirl")
+const button = document.getElementById("joinButton");
+const par = document.getElementById("par");
+const title = document.getElementById("con2title");
+const formPopup = document.getElementById("formPopup");
+const formImg = document.getElementById("formImg");
+const image = document.getElementById("bookgirl");
 
 
 console.log(button);
@@ -28,14 +28,15 @@ button.onclick = function () {
     con2title.textContent = "Hey Girl!";
     par.textContent = "Please fill out the form below and press submit.";
     formPopup.style.display = 'block';
-    button.style.display = 'none'
-    formImg.style.display = 'block'
-    image.style.display = 'none'
-}
+    button.style.display = 'none';
+    formImg.style.display = 'block';
+    image.style.display = 'none';
+};
 
-const memSignup = document.querySelector(".btn.btn-success")
+const memSignup = document.querySelector("#signUp");
 
 memSignup.addEventListener('click', function() {
+    alert('button clicked');
     const form = document.createElement('form');
     const titleSection = document.getElementById('title');
     titleSection.appendChild(form);
@@ -70,16 +71,69 @@ memSignup.addEventListener('click', function() {
     // Address Field
     const addressLabel = document.createElement('label')
     addressLabel.setAttribute('for', 'address');
-    addressLabel.textContent = 'address'
+    addressLabel.textContent = 'Address'
 
     const addressInput = document.createElement('input');
-    addressInput.setAttribute('type', 'Address');
+    addressInput.setAttribute('type', 'text');
     addressInput.setAttribute('id', 'address');
     addressInput.setAttribute('name', 'address');
     addressInput.setAttribute('placeholder', 'Enter your address');
     addressInput.required = true;
 
-}) 
+    // Trail Checkbox
+    const trialLabel = document.createElement('label');
+    trialLabel.setAttribute('for', 'trial');
+    trialLabel.textContent = 'I want to start my 30-day free trial'
+    
+    const trialInput = document.createElement('input');
+    trialInput.setAttribute('type', 'checkbox');
+    trialInput.setAttribute('id', 'trail');
+    trialInput.setAttribute('name', 'trial');
+    trialInput.required = true
+    
+    // Append Child Node
+    form.appendChild(nameLabel);
+    form.appendChild(nameInput);
+    form.appendChild(emailLabel);
+    form.appendChild(emailInput);
+    form.appendChild(addressLabel);
+    form.appendChild(addressInput);
+    form.appendChild(trialLabel);
+    form.appendChild(trialInput);
+
+    const submitButton = document.createElement('button');
+    submitButton.textContent = "Submit"
+
+    submitButton.addEventListener('click', function() {
+        event.preventDefault(); //prevents the form from refreshing the page
+        
+        const userName = nameInput.value;
+        document.getElementById('heading').textContent = `Welcome ${userName}! Here are all the perks you get for being a member...`;
+
+        form.remove(); // remove form once submitted
+
+        //return to main menu button
+        const returnButton = document.createElement('button');
+        returnButton.textContent = "Return to Main Menu";
+
+        returnButton.addEventListener('click', function() {
+            //show content before
+            document.getElementById('heading').textContent = 'Books That Inspire'
+
+            returnButton.style.display = 'none'
+        });
+        document.body.appendChild(returnButton)
+    });
+    
+    form.appendChild(submitButton);
+
+
+}); 
+
+console.log(memSignup);
+console.log(returnButton);
+
+
     
 
 
