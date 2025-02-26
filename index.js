@@ -130,9 +130,18 @@ memSignup.addEventListener('click', function() {
 
 }); 
 
-console.log(memSignup);
-console.log(returnButton);
+// console.log(memSignup);
+// console.log(returnButton);
 
+
+// import {searchBar} from "./api.js";
+
+// async function searchBooks() {
+//     const books = await searchBar("harry potter")
+//     console.log(books);
+// }
+
+// searchBooks();
 
     
 
